@@ -17,7 +17,7 @@ from requests.exceptions import HTTPError
 reload(sys)
 sys.setdefaultencoding('utf8')
 
-# 客户端ID及Secret请联系陈炜获取
+# 客户端ID及Secret请联系SA获取
 ClientId = 'client_for_read'
 ClientSecret = 'HbU3MwoyP7W8KsFPW28ckVrLd5OlzStr'
 AccessTokenUrl = 'https://lc.xiaopeng.com/oauth/token'
