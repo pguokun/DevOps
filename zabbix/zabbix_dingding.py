@@ -19,7 +19,7 @@ sys.setdefaultencoding('utf8')
 
 # 客户端ID及Secret请联系SA获取
 ClientId = 'client_for_read'
-ClientSecret = 'HbU3MwoyP7W8KsFPW28ckVrLd5OlzStr'
+ClientSecret = 'HbU3MwoyP7W8KsFPxfds12'
 AccessTokenUrl = 'https://lc.xxx.com/oauth/token'
 logging.basicConfig(level=logging.ERROR, handlers=[logging.StreamHandler()])
 Cli = OAuth2Client(ClientId, ClientSecret, AccessTokenUrl)
