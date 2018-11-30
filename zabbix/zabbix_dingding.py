@@ -10,7 +10,7 @@ import time
 import redis
 import logging
 
-#http://doc.xiaopeng.local:18090/pages/viewpage.action?pageId=17274279
+#http://doc.xxxx.local:18090/pages/viewpage.action?pageId=17274279
 from landcruiser_sdk.oauth2_client import OAuth2Client
 from requests.exceptions import HTTPError
 
@@ -20,7 +20,7 @@ sys.setdefaultencoding('utf8')
 # 客户端ID及Secret请联系SA获取
 ClientId = 'client_for_read'
 ClientSecret = 'HbU3MwoyP7W8KsFPW28ckVrLd5OlzStr'
-AccessTokenUrl = 'https://lc.xiaopeng.com/oauth/token'
+AccessTokenUrl = 'https://lc.xxx.com/oauth/token'
 logging.basicConfig(level=logging.ERROR, handlers=[logging.StreamHandler()])
 Cli = OAuth2Client(ClientId, ClientSecret, AccessTokenUrl)
 
@@ -33,13 +33,13 @@ r = redis.StrictRedis(host='127.0.0.1', port=6379)
 #设置http/https 头部
 Headers = {'Content-Type': 'application/json;charset=utf-8'}
 
-LogFile = "/home/xpmotors/logs/zabbix/zabbix_dingding.log"
+LogFile = "/home/xxx/logs/zabbix/zabbix_dingding.log"
 DefaultRobot = "https://oapi.dingtalk.com/robot/send?access_token=cce90653d971fc7ae40223ecbbf35e24dc64f2ad27d5e86c056603dcf70c4d59"
 
 #get dingding robot
 def GetDingdingRobot(ip):
     # 获取列表型数据
-    url = "https://lc.xiaopeng.com/api/cmdb/v1/machines/notifyurls?address=%s" % ip
+    url = "https://lc.xxx.com/api/cmdb/v1/machines/notifyurls?address=%s" % ip
     data = Cli.get_for_list(url)
     dictUrls = {x['code']: x['url'] for x in data}
 
