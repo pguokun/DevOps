@@ -34,7 +34,7 @@ r = redis.StrictRedis(host='127.0.0.1', port=6379)
 Headers = {'Content-Type': 'application/json;charset=utf-8'}
 
 LogFile = "/home/xxx/logs/zabbix/zabbix_dingding.log"
-DefaultRobot = "https://oapi.dingtalk.com/robot/send?access_token=cce90653d971fc7ae40223ecbbf35e24dc64f2ad27d5e86c056603dcf70c4d59"
+DefaultRobot = "https://oapi.dingtalk.com/robot/send?access_token=xxxx"
 
 #get dingding robot
 def GetDingdingRobot(ip):
